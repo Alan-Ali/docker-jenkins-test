@@ -21,4 +21,4 @@ RUN npm run build
 
 
 # Start the server
-CMD ["npm","deploy"]
+CMD ["npm","start"]
