@@ -14,7 +14,7 @@ RUN npm install
 RUN npm update
 
 # Copy the entire project
-COPY . ./app
+COPY . .
 
 # Build the React application
 RUN npm run build
