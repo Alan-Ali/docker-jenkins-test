@@ -24,5 +24,3 @@ EXPOSE 8484
 
 # Start the server
 RUN npm run start
-
-CMD ["npm", "start"]
