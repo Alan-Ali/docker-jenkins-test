@@ -17,7 +17,7 @@ RUN npm update
 COPY . .
 
 # Build the React application
-RUN yarn build
+RUN npm run build
 
 
 # Start the server
