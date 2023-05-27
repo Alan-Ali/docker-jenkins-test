@@ -17,7 +17,8 @@ RUN npm update
 COPY . .
 
 # Build the React application
-RUN npm run build
+RUN yarn build
+
 
 # Start the server
-CMD ["npm", "run", "start"]
+CMD ["npm","deploy"]
