@@ -13,5 +13,8 @@ RUN npm install
 # Copy the entire application to the container
 COPY . .
 
+# Expose the desired port
+EXPOSE 8484
+
 # Start the Node.js application
 CMD ["npm", "start"]
