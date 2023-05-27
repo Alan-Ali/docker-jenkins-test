@@ -23,4 +23,4 @@ RUN npm run build
 EXPOSE 8484
 
 # Start the server
-CMD ["npm", "start"]
+RUN npm run start
