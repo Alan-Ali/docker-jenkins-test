@@ -1,5 +1,5 @@
 # Dockerfile
-FROM node:14
+FROM node:16-alpine
 
 # Set the working directory
 WORKDIR /app
@@ -18,9 +18,6 @@ COPY . .
 
 # Build the React application
 RUN npm run build
-
-# Expose the desired port
-EXPOSE 8484
 
 # Start the server
 CMD ["npm", "run", "start"]
