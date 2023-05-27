@@ -1,20 +1,26 @@
-# Base image
+# Dockerfile
 FROM node:14
 
-# Set the working directory in the container
+# Set the working directory
 WORKDIR /app
 
-# Copy package.json and package-lock.json to the container
+# Copy package.json and package-lock.json
 COPY package*.json ./
 
-# Install project dependencies
+# Install dependencies
 RUN npm install
 
-# Copy the entire application to the container
+# Install dependencies
+RUN npm update
+
+# Copy the entire project
 COPY . .
+
+# Build the React application
+RUN npm run build
 
 # Expose the desired port
 EXPOSE 8484
 
-# Start the Node.js application
+# Start the server
 CMD ["npm", "start"]
