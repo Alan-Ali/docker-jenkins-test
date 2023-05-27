@@ -1,8 +1,8 @@
 # Dockerfile
-FROM node:16-alpine
+FROM node:14
 
 # Set the working directory
-WORKDIR /app/src
+WORKDIR /app
 
 # Copy package.json and package-lock.json
 COPY package*.json ./
