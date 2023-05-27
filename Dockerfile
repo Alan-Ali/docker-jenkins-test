@@ -20,4 +20,4 @@ COPY . .
 RUN npm run build
 
 # Start the server
-CMD ["npm", "run", "deploy"]
+CMD ["npm", "run", "start"]
