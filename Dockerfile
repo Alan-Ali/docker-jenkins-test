@@ -20,7 +20,7 @@ ENV PATH /app/node_modules/.bin:$PATH
 COPY . ./
 
 # Build the React application
-RUN npm run build
+# RUN npm run build
 
 
 # Start the server
