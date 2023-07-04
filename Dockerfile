@@ -16,8 +16,10 @@ RUN npm update
 
 ENV PATH /app/node_modules/.bin:$PATH
 
+
 # Copy the entire project
 COPY . ./
+
 
 # Build the React application
 RUN npm run build
